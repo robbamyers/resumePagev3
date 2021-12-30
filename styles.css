@@ -3,6 +3,12 @@
     color: #83c8d9;
     margin: 0px;
 }
+:target {
+    display: block;
+    position: relative;
+    top: -120px; 
+    visibility: hidden;
+  }
 body{
     background-color: #313e3b;
 }
@@ -17,6 +23,8 @@ h3{
 .menu {
     background-color: #252D2F;
     padding: 8px;
+    position: sticky;
+    top: 0;
 }
 .container {
     border: 2px solid #83c8d9;
@@ -26,7 +34,8 @@ h3{
     background-color: #313e3b;
     margin: 10px;
 }
-.image-container{
+
+.image-container {
     display: flex;
     justify-content: center;
     margin: 10px;
@@ -39,8 +48,12 @@ h3{
 }
 .about {
     padding: 10px;
+    scroll-padding-top: 105;
 }
-
+.level-container {
+    display: flex;
+    width: 100%;
+}
 
 /* Extra small devices */
 @media only screen and (max-width: 600px) {
@@ -55,17 +68,77 @@ h3{
     color: #e3e5e5;
     margin: 2px;
 }
+.about {
+    scroll-margin-top: 0;
+}
+.about.container {
+    flex-direction: column;
+}
+.about h3 {
+
+    text-align: center;
+}
+.start.filled-box {
+    width: 25px;
+    background-color: #83C8D9;
+    border: 2px solid #83C8D9;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+.filled-box {
+    width: 25px;
+    background-color: #83C8D9;
+    border: 2px solid #83C8D9;
+    border-radius: 2px;
+    margin: 3px;
+}
+.end.filled-box {
+    width: 25px;
+    background-color: #83C8D9;
+    border: 2px solid #83C8D9;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.unfilled-box {
+    width: 25px;
+    border: 2px solid #83C8D9;
+    margin: 3px;
+}
+.end.unfilled-box {
+    width: 25px;
+    border: 2px solid #83C8D9;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.skills.container {
+    flex-direction: column;
+}
+.level-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.skill {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 8px;
+    padding-right: 8px;
+}
 
 }
+
+
+
 /* Small Devices */
 @media only screen and (min-width: 600px) {
 .menu {
     display: flex;
+    justify-content: space-evenly;
 }
 .name {
     flex-shrink: 0;
-    margin: 0px;
-    padding-right: 10px;
+    margin: 5px;
+
 }
 .navbar {
     width: 100%;
@@ -76,6 +149,7 @@ h3{
 }
 .image-container {
     justify-content: start;
+    align-items: flex-start;
 }
 .headshot {
     margin-left: 8px;
@@ -83,16 +157,22 @@ h3{
 .bio {
     display: flex;
 }
+.about.container {
+    flex-direction: column;
 }
+}
+
 /* Medium Devices */
 @media only screen and (min-width: 768px) {
 
-.name{
+.name {
     margin: 20px;
 }
-
-.navbar{
+.navbar {
     margin: 20px;
+}
+.about p {
+    height: 100%;
 }
 }
 /* Large Devices */
