@@ -1,0 +1,105 @@
+* {
+    font-family: 'Didact Gothic', sans-serif;
+    color: #83c8d9;
+    margin: 0px;
+}
+body{
+    background-color: #313e3b;
+}
+h1{
+    color: #e3e5e5;
+    font-size: 20pt;
+}
+h3{
+    color: #e3e5e5;
+    font-size: 16apt;
+}
+.menu {
+    background-color: #252D2F;
+    padding: 8px;
+}
+.container {
+    border: 2px solid #83c8d9;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #313e3b;
+    margin: 10px;
+}
+.image-container{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.headshot {
+    width: 200px;
+    height: auto;
+    border: 2px solid #83c8d9;
+    border-radius: 20px;
+}
+.about {
+    padding: 10px;
+}
+
+
+/* Extra small devices */
+@media only screen and (max-width: 600px) {
+.name {
+    text-align: center;
+    padding-bottom: 5px;
+}
+.navbar {
+    margin-bottom: 5px;
+}
+.navbar-item {
+    color: #e3e5e5;
+    margin: 2px;
+}
+
+}
+/* Small Devices */
+@media only screen and (min-width: 600px) {
+.menu {
+    display: flex;
+}
+.name {
+    flex-shrink: 0;
+    margin: 0px;
+    padding-right: 10px;
+}
+.navbar {
+    width: 100%;
+}
+.navbar-item {
+    color: #e3e5e5;
+    margin: 2px;
+}
+.image-container {
+    justify-content: start;
+}
+.headshot {
+    margin-left: 8px;
+}
+.bio {
+    display: flex;
+}
+}
+/* Medium Devices */
+@media only screen and (min-width: 768px) {
+
+.name{
+    margin: 20px;
+}
+
+.navbar{
+    margin: 20px;
+}
+}
+/* Large Devices */
+@media only screen and (min-width: 992px) {
+
+}
+/* Extra large Devices */
+@media only screen and (min-width: 1200px) {
+
+}
