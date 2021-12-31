@@ -1,6 +1,6 @@
 * {
     font-family: 'Didact Gothic', sans-serif;
-    color: #83c8d9;
+    color: #f4f4f4;
     margin: 0px;
 }
 :target {
@@ -10,9 +10,10 @@
     visibility: hidden;
   }
 body {
-    background-color: #313e3b;
+    background-color: #222222;
 }
 h1 {
+    font-style: bold;
     color: #e3e5e5;
     font-size: 20pt;
 }
@@ -20,8 +21,13 @@ h3 {
     color: #e3e5e5;
     font-size: 16apt;
 }
+h4 {
+    color: #83c8d9;
+}
 a {
-    color: #e3e5e5
+    color: #e3e5e5;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #83c8d9;
 }
 ul {
     list-style-type: none;
@@ -33,17 +39,17 @@ ul {
 }
 
 .menu {
-    background-color: #252D2F;
+    background-color: #333333;
     padding: 8px;
     position: sticky;
     top: 0;
 }
 .container {
-    border: 2px solid #83c8d9;
+    border: 2px solid #f4f4f4;
     border-radius: 20px;
     display: flex;
     justify-content: space-around;
-    background-color: #313e3b;
+    background-color: #333333;
     margin: 10px;
 }
 .image-container {
@@ -55,7 +61,7 @@ ul {
 .headshot {
     width: 200px;
     height: auto;
-    border: 2px solid #83c8d9;
+    border: 2px solid #f4f4f4;
     border-radius: 20px;
 }
 .about {
@@ -112,7 +118,41 @@ ul {
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
 }
-
+.blue {
+    color: #83c8d9;
+}
+.underline-blue {
+    text-decoration: underline;
+    text-decoration-color: #83c8d9;
+    text-decoration-thickness: 2px;
+}
+.education {
+    flex-direction: column;
+}
+.edu-image {
+    height: 100px;
+}
+.admin-image {
+    width: 80px;
+}
+.education.container ul{
+    display: flex;
+    flex-direction: column;
+}
+.education.container ul > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    flex-wrap: wrap;
+}
+.education.container ul > li > h4 {
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+}
 
 /* Extra small devices */
 @media only screen and (max-width: 600px) {
@@ -133,8 +173,6 @@ ul {
 .about.container {
     flex-direction: column;
 }
-
-
 }
 
 
@@ -173,6 +211,7 @@ ul {
     justify-content: start;
 }
 .skills.container {
+    float: left;
     width: fit-content;
 }
 }
@@ -192,6 +231,14 @@ ul {
 .skills.container {
     width: fit-content;
 }
+.education.container ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.education-item {
+    margin:0px;
+}
 }
 /* Large Devices */
 @media only screen and (min-width: 992px) {
@@ -200,6 +247,7 @@ ul {
 }
 .skills.container {
     width: fit-content;
+}
 }
 /* Extra large Devices */
 @media only screen and (min-width: 1200px) {
