@@ -13,16 +13,16 @@ body {
     background-color: #222222;
 }
 h1 {
-    font-style: bold;
+
     color: #e3e5e5;
     font-size: 20pt;
 }
 h3 {
     color: #e3e5e5;
-    font-size: 16apt;
+    font-size: 16pt;
 }
 h4 {
-    color: #83c8d9;
+    color: #e3e5e5;
 }
 a {
     color: #e3e5e5;
@@ -125,6 +125,7 @@ ul {
     text-decoration: underline;
     text-decoration-color: #83c8d9;
     text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
 }
 .education {
     flex-direction: column;
@@ -153,7 +154,22 @@ ul {
     padding-right: 30px;
     width: 100%;
 }
-
+.education.container ul > li > a {
+    
+}
+.social.container {
+    display: block;
+}
+.social.container ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+i {
+    padding: 5px;
+    font-size: 20pt;
+    color: #83C8D9;
+}
 /* Extra small devices */
 @media only screen and (max-width: 600px) {
 .name {
@@ -174,7 +190,6 @@ ul {
     flex-direction: column;
 }
 }
-
 
 
 /* Small Devices */
@@ -214,6 +229,17 @@ ul {
     float: left;
     width: fit-content;
 }
+.social.container {
+    display: flex;
+    flex-direction: column;
+}
+.social.container ul{
+    flex-direction: column;
+    align-items: center;
+}
+.social.container ul > li {
+    margin: 5px;
+}
 }
 
 /* Medium Devices */
@@ -238,6 +264,10 @@ ul {
 }
 .education-item {
     margin:0px;
+}
+.social.container ul{
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 }
 /* Large Devices */
