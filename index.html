@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Includes notch adjustment for iPhone-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"> 
     <title>Document</title>
     <!--Google Fonts Below-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"> 
+    <!--Font Awesome-->
+	<script src="https://kit.fontawesome.com/1efb4586ce.js" crossorigin="anonymous"></script>
+	<!--Custom CSS-->
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 	<div class="menu">
@@ -18,8 +21,8 @@
 		<nav class="navbar container">
 			<h3 class="navbar-item"><a href="#bio">Bio</a></h3>
 			<h3 class="navbar-item"><a href="#skills">Skills</a></h3>
-			<h3 class="navbar-item">Education</h3>
-			<h3 class="navbar-item">Social</h3>
+			<h3 class="navbar-item"><a href="#education">Education</a></h3>
+			<h3 class="navbar-item"><a href="#social">Social</a></h3>
 		</nav>
 	</div>
 	<div class="bio">
@@ -79,6 +82,7 @@
 				<div class="filled-box"></div>
 				<div class="end unfilled-box"></div>
 			</li>
+		</ul>
 		<h3>Languages</h3>
 		<ul>
 			<li class="skill">
@@ -159,21 +163,42 @@
 		</ul>
 	</div>
 	<div class="education container">
+		<div id="education"></div>
 		<h3 class="centered underline-blue">Education</h3>
 		<ul>
 			<li class="education-item">
-				<img src="assets/Administrator.png" alt="Salesforce Certified Administrator Badge" class="edu-image">
+				<a href="assets/SalesforceAdministrator.pdf"><img src="assets/Administrator.png" alt="Salesforce Certified Administrator Badge" class="edu-image"></a>
 				<h4>Salesforce Certified Administrator</h4>
 			</li>
 			<li class="education-item">
 				<img src="assets/PennState.png" alt="Salesforce Certified Administrator Badge" class="edu-image">
-				<h4>B.S. Software Engineering</h4>
-			</li>
-			<li class="education-item">
-				<img src="assets/Administrator.png" alt="Salesforce Certified Administrator Badge" class="edu-image">
-				<h4>Salesforce Certified Administrator</h4>
+				<h4>B.S. Software Engineering (IP)</h4>
 			</li>
 		</ul>
-	</div>   
+	</div>
+	<div class="social container">
+		<div id="social"></div>
+		<h3 class="centered underline-blue">Social</h3>
+		<ul>
+			<li>
+				<a href="https://twitter.com/robbamyers"><i class="fab fa-twitter underline-blue"></i></a>
+			</li>
+			<li>
+				<a href="https://www.instagram.com/robbamyers/"><i class="fab fa-instagram underline-blue"></i></a>
+			</li>
+			<li>
+				<a href="https://www.linkedin.com/in/robbamyers/"><i class="fab fa-linkedin-in underline-blue"></i></a>
+			</li>
+			<li>
+				<a href="https://github.com/robbamyers"><i class="fab fa-github underline-blue"></i></a>
+			</li>
+			<li>
+				<a href="mailto:robbie.myers2010@gmail.com"><i class="fas fa-envelope underline-blue"></i></a>
+			</li>
+			<li>
+				<a href="sms:+17173277988"><i class="fas fa-comment-dots underline-blue"></i></a>
+			</li>
+		</ul>
+	</div> 
 </body>
 </html>
